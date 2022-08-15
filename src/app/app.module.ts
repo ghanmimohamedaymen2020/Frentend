@@ -10,6 +10,8 @@ import { DetailProgramComponent } from './detail-program/detail-program.componen
 import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FicheInterventionComponent } from './fiche-intervention/fiche-intervention.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ListeProgComponent,
     ProgramComponent,
-    DetailProgramComponent
+    DetailProgramComponent,
+    NavbarComponent,
+    FicheInterventionComponent
   ],
   imports: [
     HttpClientModule,
