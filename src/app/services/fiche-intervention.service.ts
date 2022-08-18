@@ -17,12 +17,14 @@ export class FicheInterventionService {
   
   
   }
+
+
   updateClassFicheIntervention(id : number):Observable<ClassFicheIntervention[]>{
     return this.http.put<ClassFicheIntervention[]>("http://localhost:8080",id)
   }
   
   createClassFicheIntervention(ClassFicheIntervention : ClassFicheIntervention): Observable<Object>{
-    return this.http.post("http://localhost:8082/addNewClassFicheIntervention",ClassFicheIntervention)
+    return this.http.post("http://localhost:8082/addNewFicheIntervention",ClassFicheIntervention)
   
   }
   getClassFicheInterventionById(id:number): Observable<ClassFicheIntervention>{

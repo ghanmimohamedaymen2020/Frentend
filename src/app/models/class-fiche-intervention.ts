@@ -1,6 +1,5 @@
 export class ClassFicheIntervention {
     
-    id: number ;
     prog : String ;
     actionsRealisees:String ;
     detailInvestigations : String ;
@@ -9,4 +8,18 @@ export class ClassFicheIntervention {
     causeIncident : String ;
     constats : String ;
     dureeIncident : String ;
+    Composantimpacte : string;
+    domaine : string;
+    dateReclamation : string;
+    nomDemandeur :string ;
+    nomIntervenants : string ;
+    origine :string ;
+    revision :string ;
+    dateModification : string;
+document : string ;
+
+object : string ;
+
+    visaIntervenants :string;
+
 }

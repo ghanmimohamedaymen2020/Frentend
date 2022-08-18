@@ -12,7 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FicheInterventionComponent } from './fiche-intervention/fiche-intervention.component';
-
+import { FormsModule } from '@angular/forms';
+import { ListeFicheInterventionComponent } from './liste-fiche-intervention/liste-fiche-intervention.component';
+import { PrintFicheInterventionComponent } from './print-fiche-intervention/print-fiche-intervention.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,12 @@ import { FicheInterventionComponent } from './fiche-intervention/fiche-intervent
     ProgramComponent,
     DetailProgramComponent,
     NavbarComponent,
-    FicheInterventionComponent
+    FicheInterventionComponent,
+    ListeFicheInterventionComponent,
+    PrintFicheInterventionComponent
   ],
   imports: [
+    FormsModule,
     HttpClientModule,
     MatGridListModule,
     BrowserModule,
