@@ -6,7 +6,7 @@ import { Programe } from 'src/app/models/programe';
   providedIn: 'root'
 })
 export class MessageServicService {
-   sendObject = new Subject<Programe>();
+   sendObject = new Subject<any>();
 
 
   constructor() { }
@@ -14,10 +14,10 @@ export class MessageServicService {
   // communicateObject(obj) {
   //     this.sendObject.next(obj);
   // }
-  sendMessage(msg :Programe){
+  sendMessage(msg :any){
 this.sendObject.next(msg)
   }
-  reciveidMessage() : Observable<Programe>{
+  reciveidMessage() : Observable<any>{
 return this.sendObject.asObservable() 
   }
 

@@ -22,10 +22,7 @@
             <label for="inputdateReclamation4" class="form-label">Date  Réclamation </label>
             <input type="date" class="form-control" id="dateReclamation" [(ngModel)]="_ficheIntevention.dateReclamation" [ngModelOptions]="{standalone: true}">
         </div>
-        <div class="col-md-4">
-            <label for="inputPassword4" class="form-label"> Constats  </label>
-            <input type="text" class="form-control" id="constats" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}">
-        </div>
+
         <div class="col-md-4">
             <label for="inputPassword4" class="form-label">Détail investigations :  </label>
             <input type="text" class="form-control" id="detailInvestigations" [(ngModel)]="_ficheIntevention.detailInvestigations" [ngModelOptions]="{standalone: true}">
@@ -34,9 +31,15 @@
             <label for="inputPassword4" class="form-label">Cause de l’Incident </label>
             <input type="text" class="form-control" id="causeIncident" [(ngModel)]="_ficheIntevention.causeIncident" [ngModelOptions]="{standalone: true}">
         </div>
+        <div class="form-floating">
+            <label for="inputPassword4" class="form-label"> Constats  </label>
+            <textarea type="text" class="form-control" id="constats" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+
+
         <div class="col-md-4">
             <label for="inputPassword4" class="form-label">Conséquences de l’incident </label>
-            <input type="text" class="form-control" id="consequencesIncident" [(ngModel)]="_ficheIntevention.consequencesIncident" [ngModelOptions]="{standalone: true}">
+            <input type="text" class="form-control" id="consequencesIncident" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}">
         </div>
         <div class="col-md-4">
             <label for="inputtext4" class="form-label">Durée de l’incident </label>

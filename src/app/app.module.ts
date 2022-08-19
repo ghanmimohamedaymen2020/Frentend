@@ -15,6 +15,7 @@ import { FicheInterventionComponent } from './fiche-intervention/fiche-intervent
 import { FormsModule } from '@angular/forms';
 import { ListeFicheInterventionComponent } from './liste-fiche-intervention/liste-fiche-intervention.component';
 import { PrintFicheInterventionComponent } from './print-fiche-intervention/print-fiche-intervention.component';
+import { NgxPrintModule } from 'ngx-print';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PrintFicheInterventionComponent } from './print-fiche-intervention/prin
     MatGridListModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPrintModule
   ],
   providers: [],
   bootstrap: [AppComponent]

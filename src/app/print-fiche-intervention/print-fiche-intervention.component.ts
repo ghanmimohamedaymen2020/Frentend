@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import jsPDF from 'jspdf';
+import { ClassFicheIntervention } from '../models/class-fiche-intervention';
+import { MessageServicService } from '../services/MessageService/message-servic.service';
 
 @Component({
   selector: 'app-print-fiche-intervention',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./print-fiche-intervention.component.css']
 })
 export class PrintFicheInterventionComponent implements OnInit {
-
-  constructor() { }
+_ficheIntervention : ClassFicheIntervention
+  constructor(private _messageService : MessageServicService) { }
 
   ngOnInit(): void {
+    
+  this._messageService.reciveidMessage().subscribe(msg=>{this._ficheIntervention= msg})
+  console.log(this._ficheIntervention)
+
   }
 
+ 
+ 
 }
