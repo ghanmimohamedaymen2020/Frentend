@@ -31,31 +31,53 @@
             <label for="inputPassword4" class="form-label">Cause de l’Incident </label>
             <input type="text" class="form-control" id="causeIncident" [(ngModel)]="_ficheIntevention.causeIncident" [ngModelOptions]="{standalone: true}">
         </div>
-        <div class="form-floating">
-            <label for="inputPassword4" class="form-label"> Constats  </label>
-            <textarea type="text" class="form-control" id="constats" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}"></textarea>
+
+
+
+
+        <div>
+            <label for="inputtext4" class="form-label">constats </label>
+
+            <div class="form-floating">
+
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" id="constats" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
         </div>
 
 
-        <div class="col-md-4">
-            <label for="inputPassword4" class="form-label">Conséquences de l’incident </label>
-            <input type="text" class="form-control" id="consequencesIncident" [(ngModel)]="_ficheIntevention.constats" [ngModelOptions]="{standalone: true}">
+
+
+
+
+        <div>
+            <label for="inputtext4" class="form-label">Conséquences de l’incident </label>
+
+            <div class="form-floating">
+
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" id="consequencesIncident" [(ngModel)]="_ficheIntevention.consequencesIncident" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
         </div>
+
+
         <div class="col-md-4">
             <label for="inputtext4" class="form-label">Durée de l’incident </label>
             <input type="time" class="form-control" id="dureeIncident" [(ngModel)]="_ficheIntevention.dureeIncident" [ngModelOptions]="{standalone: true}">
         </div>
         <div>
-            <div class="form-floating">
+            <div>
+                <label for="inputtext4" class="form-label">Actions réalisées : </label>
 
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" id="" [(ngModel)]="_ficheIntevention.actionsRealisees" [ngModelOptions]="{standalone: true}"></textarea>
-                <label for="floatingTextarea2">Actions réalisées :</label>
+                <div class="form-floating">
+
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" id="" [(ngModel)]="_ficheIntevention.actionsRealisees" [ngModelOptions]="{standalone: true}"></textarea>
+                </div>
             </div>
             <br>
 
             <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="statutResolution" [(ngModel)]="_ficheIntevention.statutResolution" [ngModelOptions]="{standalone: true}">
                 <label class="form-check-label" for="flexSwitchCheckDefault">Statut résolution </label>
+
+                <input class="form-check-input" type="checkbox" id="statutResolution" [(ngModel)]="_ficheIntevention.statutResolution" [ngModelOptions]="{standalone: true}">
             </div>
 
 
@@ -80,6 +102,7 @@
             <br>
 
             <div class="row g-3">
+                <br>
 
                 <div class="col-md-2">
                     <label for="inputprogramName4" class="form-label">Document</label>
@@ -97,7 +120,7 @@
                     <label for="inputprogramName4" class="form-label">Révision</label>
                     <input type="text" class="form-control" id="revision" [(ngModel)]="_ficheIntevention.revision" [ngModelOptions]="{standalone: true}">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label for="inputprogramName4" class="form-label">Date Modification</label>
                     <input type="date" class="form-control" id="dateModification" [(ngModel)]="_ficheIntevention.dateModification" [ngModelOptions]="{standalone: true}">
                 </div>

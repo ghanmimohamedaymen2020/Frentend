@@ -28,7 +28,7 @@ export class FicheInterventionComponent implements OnInit {
 }
 
 gotoFicheInternetionList(){
-  this.router.navigate(['/ListOfFichesInterventions'])
+  this.router.navigate(['/ListeIncient'])
   }
 
   
