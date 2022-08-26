@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ListeProgComponent } from './liste-prog/liste-prog.component';
 import { ProgramComponent } from './program/program.component';
 import { DetailProgramComponent } from './detail-program/detail-program.component';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -20,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ListeProgComponent } from './liste-prog/liste-prog.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     
   ],
   imports: [
+    Ng2SearchPipeModule,
     FormsModule,
     HttpClientModule,
     MatGridListModule,

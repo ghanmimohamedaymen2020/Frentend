@@ -14,8 +14,7 @@ _ficheIntervention : ClassFicheIntervention
 
   ngOnInit(): void {
     
-  this._messageService.reciveidMessage().subscribe(msg=>{this._ficheIntervention= msg})
-  console.log(this._ficheIntervention)
+ 
 
   }
 

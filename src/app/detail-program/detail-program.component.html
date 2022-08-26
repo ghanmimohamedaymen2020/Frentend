@@ -1,4 +1,4 @@
-<div *ngIf="ProgramFromList" class="card w-200">
+<div class="card w-200">
     <div class="card-body">
 
         <p class="fw-bold"> Program Name : </p>{{ProgramFromList.prog}}
@@ -7,13 +7,20 @@
         <p class="fw-bold"> Heure Fin : </p>{{ProgramFromList.heurf}}
         <p class="fw-bold"> Durée d'exécution : </p>{{ProgramFromList.duree}}
 
-
+        <button (click)="getPrograme()" (click)="getname()">{{ProgramFromList.prog}}</button>
 
 
 
 
 
     </div>
+
+
+
+    <ol *ngFor="let pro of ListeProgrames">
+        <li> {{pro.prog}} </li>
+    </ol>
+
 </div>
 
 <!-- <div class="card w-200">

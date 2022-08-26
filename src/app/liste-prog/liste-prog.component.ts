@@ -1,4 +1,4 @@
-  import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
   import { Router } from '@angular/router';
   import { Programe } from '../models/programe';
   import { MessageServicService } from '../services/MessageService/message-servic.service';
@@ -14,6 +14,7 @@
 
   ListeProgrames : Programe[] ;
     programeFromListePrograme: Programe  ;
+    message : string
 
     constructor(private serviceListPrograme : ProgramListeService , private router : Router, private _messageService : MessageServicService) { }
 
@@ -23,13 +24,20 @@
     getPrograme() {
       return this.serviceListPrograme.getListePrograme().subscribe(data=> this.ListeProgrames = data )
         }
+     
 
-//      sendObjectToDetail(program){
-//           //  this._messageService._ProgramFromList.subscribe(program)
-// this._messageService.communicateObject(this.programeFromListePrograme);
-//           }
 sendObjectToDetail(message){
   this._messageService.sendMessage(message)
+}
+
+
+
+
+
+
+
+sendProgrammeNameTodetail(message){
+  return this._messageService.sendNamePrograme(this.message)
 }
 
         

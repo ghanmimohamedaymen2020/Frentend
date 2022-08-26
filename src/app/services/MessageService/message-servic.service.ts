@@ -6,8 +6,9 @@ import { Programe } from 'src/app/models/programe';
   providedIn: 'root'
 })
 export class MessageServicService {
+ 
    sendObject = new Subject<any>();
-
+message : string
 
   constructor() { }
 
@@ -21,5 +22,16 @@ this.sendObject.next(msg)
 return this.sendObject.asObservable() 
   }
 
+
+
+
+  sendNamePrograme(message){
+return this.message
+  }
+
+
+recieveMessage(){
+  return this.message
+}
 
 }
